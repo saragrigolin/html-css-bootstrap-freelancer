@@ -47,8 +47,10 @@ header .header_right .hamburger_menu {
     }
 }
 
-.jumbotron {
+.jumbotron,
+.about {
     background-color: var(--jumbotron-bg);
+    color: var(--white);
 }
 
 .jumbotron-contain > * {
@@ -56,7 +58,7 @@ header .header_right .hamburger_menu {
     background-color: var(--white);
 }
 
-.portfolio .title > * {
+.title > * {
     background-color: var(--black);
     height: 50px;
 }
@@ -64,4 +66,14 @@ header .header_right .hamburger_menu {
 .thumbnail .thumb-image {
     height: 200px;
     background-color: var(--light-magenta);
+}
+
+.download > * {
+    background-color: var(--black);
+    height: 30px;
+}
+
+.form > * {
+    background-color: var(--light-magenta);
+    height: 300px;
 }
