@@ -55,7 +55,6 @@ header .header_right .hamburger_menu {
 .jumbotron,
 .about {
     background-color: var(--jumbotron-bg);
-    color: var(--white);
 }
 
 .title > * {
@@ -78,6 +77,12 @@ header .header_right .hamburger_menu {
 .download > * {
     background-color: var(--black);
     height: 30px;
+}
+
+/* About */
+.about-content-text {
+    height: 150px;
+    background-color: var(--white);
 }
 
 /* Contact me */
