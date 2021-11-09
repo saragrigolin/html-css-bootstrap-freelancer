@@ -49,7 +49,7 @@ header .header_right .hamburger_menu {
     background-color: var(--jumbotron-bg);
 }
 
-.jumbotron-contain {
-    height: 350px;
+.jumbotron-contain > * {
+    height: 300px;
     background-color: var(--white);
 }
