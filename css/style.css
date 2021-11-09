@@ -29,3 +29,17 @@ header .header_right ul {
 header .header_right li {
     display: inline-block;
 }
+
+header .header_right .hamburger_menu {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    header .header_right ul {
+        display: none;
+    }
+
+    header .header_right .hamburger_menu {
+        display: inline-block;
+    }
+}
