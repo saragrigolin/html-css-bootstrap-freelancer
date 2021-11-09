@@ -2,6 +2,8 @@
     --header-bg: #2C3E50;
     --white: #ffffff;
     --jumbotron-bg: #31BC9B;
+    --black: #000000;
+    --light-magenta: #BA4B63;
 }
 
 html {
@@ -52,4 +54,14 @@ header .header_right .hamburger_menu {
 .jumbotron-contain > * {
     height: 300px;
     background-color: var(--white);
+}
+
+.portfolio .title > * {
+    background-color: var(--black);
+    height: 50px;
+}
+
+.thumbnail .thumb-image {
+    height: 200px;
+    background-color: var(--light-magenta);
 }
