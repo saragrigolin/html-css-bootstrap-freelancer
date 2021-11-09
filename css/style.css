@@ -41,7 +41,7 @@ header .header_right .hamburger_menu {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
     header .header_right ul {
         display: none;
     }
