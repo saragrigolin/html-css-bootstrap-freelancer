@@ -1,0 +1,31 @@
+:root {
+    --header-bg: #2C3E50;
+    --white: #ffffff;
+}
+
+html {
+    font-size: 100%;
+}
+
+header.my_header {
+    background-color: var(--header-bg);
+}
+
+header .header_left {
+    background-color: var(--white);
+}
+
+header .header_right {
+    text-align: right;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+header .header_right ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+header .header_right li {
+    display: inline-block;
+}
