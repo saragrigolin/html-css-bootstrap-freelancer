@@ -1,6 +1,7 @@
 :root {
     --header-bg: #2C3E50;
     --white: #ffffff;
+    --jumbotron-bg: #31BC9B;
 }
 
 html {
@@ -42,4 +43,13 @@ header .header_right .hamburger_menu {
     header .header_right .hamburger_menu {
         display: inline-block;
     }
+}
+
+.jumbotron {
+    background-color: var(--jumbotron-bg);
+}
+
+.jumbotron-contain {
+    height: 350px;
+    background-color: var(--white);
 }
