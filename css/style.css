@@ -3,6 +3,7 @@
     --header-bg: #2C3E50;
     --white: #ffffff;
     --jumbotron-bg: #31BC9B;
+    --btn-hover: #157760;
     --black: #000000;
     --light-magenta: #BA4B63;
     --footer-top: #3A546D;
@@ -43,16 +44,6 @@ header .header_right li {
     display: inline-block;
 }
 
-@media screen and (max-width: 768px) {
-    header.my_header h1{
-        font-size: 1.3em;
-    }
-
-    header.my_header li {
-        font-size: 0.8em;
-    }
-}
-
 /* Main */
 main {
     margin-top: 60px;
@@ -63,46 +54,69 @@ main {
     background-color: var(--jumbotron-bg);
 }
 
-.title > * {
-    background-color: var(--black);
-    height: 50px;
-}
-
 .jumbotron-contain img {
     width: 20%;
 }
 
-.jumbotron-contain .jumbo-title,
-.jumbotron-contain .jumbo-desc {
+.star::before,
+.star::after {
+    content: '';
+    width: 7%;
+    height: 2px;
+    display: inline-block;
+    background-color: var(--white);
+    vertical-align: middle;
+}
+
+.portfolio .star::before,
+.portfolio .star::after,
+.contact-me .star::before,
+.contact-me .star::after {
+    background-color: var(--black);
+}
+
+.title,
+.desc {
     text-transform: uppercase;
 }
 
-.jumbotron-contain .jumbo-desc {
+.jumbotron-contain .desc {
     font-size: 1.3em;
     font-weight: 300;
 }
 
 /* Portfolio */
-.thumbnail .thumb-image {
-    height: 200px;
-    background-color: var(--light-magenta);
+.portfolio,
+.contact-me {
+    color: var(--black);
 }
 
-.download > * {
-    background-color: var(--black);
-    height: 30px;
+.portfolio img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 /* About */
-.about-content-text {
-    height: 150px;
-    background-color: var(--white);
-}
 
 /* Contact me */
-.form > * {
-    background-color: var(--light-magenta);
-    height: 300px;
+.my_form.form-control {
+    border: 0;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+}
+
+.my_form:hover {
+    font-size: 1.2em;
+}
+
+.my_btn {
+    background-color: var(--jumbotron-bg);
+    color: var(--white);
+}
+
+.my_btn:hover {
+    background-color: var(--btn-hover);
+    color: var(--white);
 }
 
 /* Footer */
@@ -123,4 +137,20 @@ footer .footer-text {
 footer .footer-bottom-text {
     height: 20px;
     background-color: var(--white);
+}
+
+@media screen and (max-width: 768px) {
+    header.my_header h1{
+        font-size: 1.3em;
+    }
+
+    header.my_header li {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 578px) {
+    .jumbotron-contain .jumbo-desc {
+        font-size: 1.2em;
+    }
 }
