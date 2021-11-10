@@ -32,9 +32,9 @@
                 </div>
                 <div class="header_right align-items-center justify-content-end col-6 col-sm-7 d-none d-sm-flex">
                     <ul>
-                        <li class="px-2">portfolio</li>
-                        <li class="px-2">about</li>
-                        <li class="ps-2">contact</li>
+                        <li class="px-2"><a href="#">portfolio</a></li>
+                        <li class="px-2"><a href="#">about</a></li>
+                        <li class="ps-2"><a href="#">contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -74,22 +74,52 @@
                 </div>
                 <div class="row thumbnail row-cols-1 row-cols-sm-2 row-cols-md-3 gy-4">
                     <div class="col">
-                        <img src="img/cabin.png" alt="">
+                        <div class="thumb position-relative">
+                            <img src="img/cabin.png" alt="">
+                            <div class="transition position-absolute">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="col">
-                        <img src="img/cake.png" alt="">
+                        <div class="thumb position-relative">
+                            <img src="img/cake.png" alt="">
+                            <div class="transition position-absolute">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="col">
-                        <img src="img/circus.png" alt="">
+                        <div class="thumb position-relative">
+                            <img src="img/circus.png" alt="">
+                            <div class="transition position-absolute">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="col">
-                        <img src="img/game.png" alt="">
+                        <div class="thumb position-relative">
+                            <img src="img/game.png" alt="">
+                            <div class="transition position-absolute">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="col">
-                        <img src="img/safe.png" alt="">
+                        <div class="thumb position-relative">
+                            <img src="img/safe.png" alt="">
+                            <div class="transition position-absolute">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="col">
-                        <img src="img/submarine.png" alt="">
+                        <div class="thumb position-relative">
+                            <img src="img/submarine.png" alt="">
+                            <div class="transition position-absolute">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -142,17 +172,21 @@
                 <div class="row justify-content-center">
                     <div class="col-10">
                         <form>
-                            <div class="mb-3">
-                                <input type="text" class="ps-0 my_form form-control" placeholder="Name" aria-label="Name">
+                            <div class="mb-3 d-flex flex-column-reverse">
+                                <input type="text" id="InputName" class="ps-0 my_form form-control" aria-label="Name">
+                                <label for="InputName" class="my_label form-label">Name</label>
                             </div>
-                            <div class="mb-3">
-                                <input placeholder="Email Address" type="email" class="ps-0 my_form form-control" id="InputEmail" aria-describedby="emailHelp">
+                            <div class="mb-3 d-flex flex-column-reverse">
+                                <input type="email" class="ps-0 my_form form-control" id="InputEmail" aria-describedby="emailHelp">
+                                <label for="InputEmail" class="my_label form-label">Email Address</label>
                             </div>
-                            <div class="mb-3">
-                                <input placeholder="Phone Number" type="text" class="ps-0 my_form form-control" id="inputPhone">
+                            <div class="mb-3 d-flex flex-column-reverse">
+                                <input type="text" class="ps-0 my_form form-control" id="inputPhone">
+                                <label for="InputPhone" class="my_label form-label">Phone number</label>
                             </div>
-                            <div class="mb-3">
-                                <textarea placeholder="Message" class="ps-0 my_form form-control" id="FormControlTextarea" rows="3"></textarea>
+                            <div class="mb-3 d-flex flex-column-reverse">
+                                <textarea class="ps-0 my_form form-control" id="FormControlTextarea" rows="3"></textarea>
+                                <label for="FormControlTextarea" class="my_label form-label">Message</label>
                             </div>
                             <button type="submit" class="btn my_btn">Submit</button>
                         </form>
