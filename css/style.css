@@ -115,13 +115,17 @@ main {
 }
 
 .portfolio .transition {
-    display: none;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 0;
     right: 0;
     width: 100%;
     height: 100%;
     background-color: var(--jumbotron-bg);
     border-radius: 10px;
+    transition: opacity 1s;
 }
 
 .portfolio .transition i {
@@ -129,14 +133,8 @@ main {
     color: var(--white);
 }
 
-.thumbnail .thumb {
-    transition: 2s;
-}
-
 .thumb:hover .transition {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    opacity: 100;
 }
 
 /* About */
