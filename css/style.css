@@ -68,10 +68,18 @@ main {
     height: 50px;
 }
 
-/* Jumbotron */
-.jumbotron-contain > * {
-    height: 300px;
-    background-color: var(--white);
+.jumbotron-contain img {
+    width: 20%;
+}
+
+.jumbotron-contain .jumbo-title,
+.jumbotron-contain .jumbo-desc {
+    text-transform: uppercase;
+}
+
+.jumbotron-contain .jumbo-desc {
+    font-size: 1.3em;
+    font-weight: 300;
 }
 
 /* Portfolio */
