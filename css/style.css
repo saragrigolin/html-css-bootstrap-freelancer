@@ -11,20 +11,26 @@
 
 html {
     font-size: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    color: var(--white);
 }
 
 /* Header */
 header.my_header {
     background-color: var(--header-bg);
+    text-transform: uppercase;
+    height: 60px;
 }
 
-header .header_left {
-    background-color: var(--white);
+header.my_header h1 {
+    font-size: 1.5em;
 }
 
 header .header_right {
     text-align: right;
-    text-transform: uppercase;
     color: var(--white);
 }
 
@@ -37,21 +43,21 @@ header .header_right li {
     display: inline-block;
 }
 
-header .header_right .hamburger_menu {
-    display: none;
-}
-
-@media screen and (max-width: 576px) {
-    header .header_right ul {
-        display: none;
+@media screen and (max-width: 768px) {
+    header.my_header h1{
+        font-size: 1.3em;
     }
 
-    header .header_right .hamburger_menu {
-        display: inline-block;
+    header.my_header li {
+        font-size: 0.8em;
     }
 }
 
 /* Main */
+main {
+    margin-top: 60px;
+}
+
 .jumbotron,
 .about {
     background-color: var(--jumbotron-bg);
