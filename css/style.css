@@ -19,6 +19,14 @@ body {
     color: var(--white);
 }
 
+a, 
+a:hover, 
+a:active, 
+a:focus {
+    text-decoration: none;
+    color: var(--jumbotron-bg);
+}
+
 /* Header */
 header.my_header {
     background-color: var(--header-bg);
@@ -124,19 +132,24 @@ footer .footer-top {
     background-color: var(--footer-top);
 }
 
+footer .footer-top h3 {
+    text-transform: uppercase;
+}
+
+.footer-top .my_icon {
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    border: 1px solid var(--white);
+    vertical-align: middle;
+}
+
+.footer-top .fab {
+    line-height: 35px;
+}
+
 footer .footer-bottom {
     background-color: var(--footer-bottom);
-}
-
-
-footer .footer-text {
-    height: 150px;
-    background-color: var(--white);
-}
-
-footer .footer-bottom-text {
-    height: 20px;
-    background-color: var(--white);
 }
 
 @media screen and (max-width: 768px) {
