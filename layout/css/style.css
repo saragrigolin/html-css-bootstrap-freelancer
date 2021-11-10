@@ -1,0 +1,112 @@
+/* General */
+:root {
+    --header-bg: #2C3E50;
+    --white: #ffffff;
+    --jumbotron-bg: #31BC9B;
+    --black: #000000;
+    --light-magenta: #BA4B63;
+    --footer-top: #3A546D;
+    --footer-bottom: #2C3F51;
+}
+
+html {
+    font-size: 100%;
+}
+
+/* Header */
+header.my_header {
+    background-color: var(--header-bg);
+}
+
+header .header_left {
+    background-color: var(--white);
+}
+
+header .header_right {
+    text-align: right;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+header .header_right ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+header .header_right li {
+    display: inline-block;
+}
+
+header .header_right .hamburger_menu {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    header .header_right ul {
+        display: none;
+    }
+
+    header .header_right .hamburger_menu {
+        display: inline-block;
+    }
+}
+
+/* Main */
+.jumbotron,
+.about {
+    background-color: var(--jumbotron-bg);
+}
+
+.title > * {
+    background-color: var(--black);
+    height: 50px;
+}
+
+/* Jumbotron */
+.jumbotron-contain > * {
+    height: 300px;
+    background-color: var(--white);
+}
+
+/* Portfolio */
+.thumbnail .thumb-image {
+    height: 200px;
+    background-color: var(--light-magenta);
+}
+
+.download > * {
+    background-color: var(--black);
+    height: 30px;
+}
+
+/* About */
+.about-content-text {
+    height: 150px;
+    background-color: var(--white);
+}
+
+/* Contact me */
+.form > * {
+    background-color: var(--light-magenta);
+    height: 300px;
+}
+
+/* Footer */
+footer .footer-top {
+    background-color: var(--footer-top);
+}
+
+footer .footer-bottom {
+    background-color: var(--footer-bottom);
+}
+
+
+footer .footer-text {
+    height: 150px;
+    background-color: var(--white);
+}
+
+footer .footer-bottom-text {
+    height: 20px;
+    background-color: var(--white);
+}
